@@ -2,105 +2,144 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Présentation du projet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReviewAnalyzer - Présentation</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
+      background-color: #f9fafb;
       margin: 0;
       padding: 2rem;
+      color: #111827;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      background: #fff;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     }
 
     h1 {
-      font-size: 2rem;
-      color: #0070f3;
+      font-size: 2.2rem;
+      color: #2563eb;
       margin-bottom: 1rem;
     }
 
     h2 {
-      font-size: 1.4rem;
-      margin-top: 2rem;
-      color: #333;
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      color: #1f2937;
     }
 
     ul {
-      padding-left: 1.2rem;
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
     }
 
     li {
-      margin: 0.6rem 0;
+      margin: 0.75rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    li::before {
+      content: '✅';
+      margin-right: 0.6rem;
+      color: #10b981;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      border-left: 5px solid #3b82f6;
+      border-radius: 10px;
+      background: #f3f4f6;
+      transition: 0.3s ease;
+    }
+
+    .section:hover {
+      background: #e0f2fe;
+    }
+
+    .section img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      object-fit: cover;
     }
 
     .highlight {
-      background-color: #e0f2fe;
+      background-color: #dbeafe;
       padding: 0.2rem 0.5rem;
       border-radius: 5px;
     }
 
-    .section {
-      transition: all 0.3s ease;
+    p {
+      margin: 0.5rem 0;
     }
 
-    .section:hover {
-      background-color: #f0f4ff;
-      border-left: 5px solid #0070f3;
-      padding-left: 1rem;
+    .footer-note {
+      margin-top: 2rem;
+      font-style: italic;
+      background: #fef9c3;
+      padding: 1rem;
+      border-left: 5px solid #facc15;
+      border-radius: 8px;
     }
 
-    .emoji {
-      font-size: 1.2rem;
-      margin-right: 0.4rem;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem;
+    @media (max-width: 700px) {
+      .section {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🚀 <span class="highlight">[Nom du projet]</span> – Optimise ton activité avec l’IA</h1>
+    <h1>🚀 <span class="highlight">ReviewAnalyzer</span> – Optimise ton activité avec l’IA</h1>
 
     <div class="section">
-      <h2>👨‍🍳 Pour les commerçants, restaurateurs, freelances, hôtes Airbnb…</h2>
-      <p>Tu as déjà une activité et tu veux l’optimiser intelligemment ?<br />
-      <strong>[Nom du projet]</strong> est un outil SaaS propulsé par l’IA qui t’aide à :</p>
-      <ul>
-        <li>✅ Analyser automatiquement tes avis clients en ligne (Google, Airbnb, TripAdvisor…)</li>
-        <li>✅ Résumer clairement ce que tes clients aiment ou critiquent</li>
-        <li>✅ Recevoir des recommandations concrètes pour t’améliorer (prix, ambiance, accueil…)</li>
-        <li>✅ Comparer tes performances à celles des concurrents proches</li>
-        <li>✅ Importer une photo de ta carte/menu pour analyser sa lisibilité, ses prix, et sa cohérence avec les tendances du quartier</li>
-      </ul>
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Avis client">
+      <div>
+        <h2>👨‍🍳 Pour les commerçants, restaurateurs, freelances, hôtes Airbnb…</h2>
+        <p>Tu as déjà une activité et tu veux l’optimiser intelligemment ?</p>
+        <p><strong>ReviewAnalyzer</strong> est un outil SaaS propulsé par l’IA qui t’aide à :</p>
+        <ul>
+          <li>Analyser automatiquement tes avis clients en ligne (Google, Airbnb, TripAdvisor…)</li>
+          <li>Résumer clairement ce que tes clients aiment ou critiquent</li>
+          <li>Recevoir des recommandations concrètes pour t’améliorer (prix, ambiance, accueil…)</li>
+          <li>Comparer tes performances à celles des concurrents proches</li>
+          <li>Importer une photo de ta carte/menu pour analyser sa lisibilité, ses prix, et sa cohérence avec les tendances du quartier</li>
+        </ul>
+      </div>
     </div>
 
     <div class="section">
-      <h2>🧠 Pour ceux qui veulent lancer un commerce ou projet</h2>
-      <p>Tu veux ouvrir un resto, un salon de coiffure, une boutique, ou même te lancer en freelance ?</p>
-      <p><strong>[Nom du projet]</strong> t’aide à étudier un quartier grâce à la data locale :</p>
-      <ul>
-        <li>✅ Accès aux tendances de la zone (types de commerces, ambiance, prix pratiqués…)</li>
-        <li>✅ Avis moyens des concurrents</li>
-        <li>✅ Suggestions d’opportunités basées sur les manques identifiés dans le secteur</li>
-        <li>✅ Étude des types de clients du quartier (besoins, attentes…)</li>
-      </ul>
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Recherche quartier">
+      <div>
+        <h2>🧠 Pour ceux qui veulent lancer un commerce ou projet</h2>
+        <p>Tu veux ouvrir un resto, un salon de coiffure, une boutique, ou te lancer en freelance ?</p>
+        <p><strong>ReviewAnalyzer</strong> t’aide à étudier un quartier grâce à la data locale :</p>
+        <ul>
+          <li>Accès aux tendances de la zone (types de commerces, ambiance, prix pratiqués…)</li>
+          <li>Avis moyens des concurrents</li>
+          <li>Suggestions d’opportunités basées sur les manques du secteur</li>
+          <li>Étude des types de clients du quartier (besoins, attentes…)</li>
+        </ul>
+      </div>
     </div>
 
-    <p style="margin-top: 2rem; font-style: italic;">🧠 Toute l’analyse est alimentée par une IA qui structure les retours clients, la concurrence et les données locales pour t’aider à prendre des décisions stratégiques.</p>
+    <p class="footer-note">🧠 Toute l’analyse est alimentée par une IA qui structure les retours clients, la concurrence et les données locales pour t’aider à prendre des décisions stratégiques.</p>
   </div>
 </body>
 </html>
