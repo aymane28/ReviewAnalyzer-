@@ -2,51 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ReviewAnalyzer – Donne du sens aux avis</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Présentation du projet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #0070f3;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0.6rem 0;
+    }
+
+    .highlight {
+      background-color: #e0f2fe;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    .section {
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      background-color: #f0f4ff;
+      border-left: 5px solid #0070f3;
+      padding-left: 1rem;
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+      margin-right: 0.4rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white font-sans leading-relaxed tracking-wide">
-  
-  <div class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-6">
-      <i class="fas fa-chart-line animate-pulse mr-2"></i>ReviewAnalyzer
-    </h1>
-    
-    <p class="text-lg sm:text-xl text-gray-300 mb-8">
-      Une plateforme intelligente qui analyse automatiquement les avis clients en ligne
-      (Google, Airbnb, etc.), identifie les forces et les faiblesses de chaque établissement, 
-      et délivre des recommandations concrètes pour se démarquer.
-    </p>
-    
-    <div class="bg-gray-800/60 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-      <h2 class="text-2xl font-semibold text-pink-400 mb-4">
-        🛍️ Pour les commerçants, restaurateurs, hôteliers, freelancers...
-      </h2>
-      <p class="text-gray-300 text-base sm:text-lg mb-2">
-        Suivez vos avis clients en temps réel, détectez les tendances du quartier,
-        ajustez vos prix, vos services ou vos menus selon les retours clients et la concurrence locale.
-      </p>
+<body>
+  <div class="container">
+    <h1>🚀 <span class="highlight">[Nom du projet]</span> – Optimise ton activité avec l’IA</h1>
+
+    <div class="section">
+      <h2>👨‍🍳 Pour les commerçants, restaurateurs, freelances, hôtes Airbnb…</h2>
+      <p>Tu as déjà une activité et tu veux l’optimiser intelligemment ?<br />
+      <strong>[Nom du projet]</strong> est un outil SaaS propulsé par l’IA qui t’aide à :</p>
+      <ul>
+        <li>✅ Analyser automatiquement tes avis clients en ligne (Google, Airbnb, TripAdvisor…)</li>
+        <li>✅ Résumer clairement ce que tes clients aiment ou critiquent</li>
+        <li>✅ Recevoir des recommandations concrètes pour t’améliorer (prix, ambiance, accueil…)</li>
+        <li>✅ Comparer tes performances à celles des concurrents proches</li>
+        <li>✅ Importer une photo de ta carte/menu pour analyser sa lisibilité, ses prix, et sa cohérence avec les tendances du quartier</li>
+      </ul>
     </div>
 
-    <div class="bg-gray-800/60 rounded-xl p-6 mt-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-      <h2 class="text-2xl font-semibold text-green-400 mb-4">
-        📍 Pour les porteurs de projet ou curieux
-      </h2>
-      <p class="text-gray-300 text-base sm:text-lg mb-2">
-        Vous souhaitez ouvrir un restaurant, un commerce ou un business ?
-        Accédez à la data d’un quartier, découvrez les tendances locales, les besoins
-        des clients et leurs frustrations. Une boussole business intelligente.
-      </p>
+    <div class="section">
+      <h2>🧠 Pour ceux qui veulent lancer un commerce ou projet</h2>
+      <p>Tu veux ouvrir un resto, un salon de coiffure, une boutique, ou même te lancer en freelance ?</p>
+      <p><strong>[Nom du projet]</strong> t’aide à étudier un quartier grâce à la data locale :</p>
+      <ul>
+        <li>✅ Accès aux tendances de la zone (types de commerces, ambiance, prix pratiqués…)</li>
+        <li>✅ Avis moyens des concurrents</li>
+        <li>✅ Suggestions d’opportunités basées sur les manques identifiés dans le secteur</li>
+        <li>✅ Étude des types de clients du quartier (besoins, attentes…)</li>
+      </ul>
     </div>
 
-    <div class="mt-12 text-center">
-      <p class="text-sm text-gray-500 italic">
-        Propulsé par une IA qui alimente l’analyse des avis, des tendances et des données locales.
-      </p>
-    </div>
+    <p style="margin-top: 2rem; font-style: italic;">🧠 Toute l’analyse est alimentée par une IA qui structure les retours clients, la concurrence et les données locales pour t’aider à prendre des décisions stratégiques.</p>
   </div>
-
 </body>
 </html>
