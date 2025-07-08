@@ -3,50 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ReviewAnalyzer – Donne du sens aux avis</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>ReviewAnalyzer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white font-sans leading-relaxed tracking-wide">
-  
-  <div class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-6">
-      <i class="fas fa-chart-line animate-pulse mr-2"></i>ReviewAnalyzer
-    </h1>
-    
-    <p class="text-lg sm:text-xl text-gray-300 mb-8">
-      Une plateforme intelligente qui analyse automatiquement les avis clients en ligne
-      (Google, Airbnb, etc.), identifie les forces et les faiblesses de chaque établissement, 
-      et délivre des recommandations concrètes pour se démarquer.
-    </p>
-    
-    <div class="bg-gray-800/60 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-      <h2 class="text-2xl font-semibold text-pink-400 mb-4">
-        🛍️ Pour les commerçants, restaurateurs, hôteliers, freelancers...
-      </h2>
-      <p class="text-gray-300 text-base sm:text-lg mb-2">
-        Suivez vos avis clients en temps réel, détectez les tendances du quartier,
-        ajustez vos prix, vos services ou vos menus selon les retours clients et la concurrence locale.
-      </p>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold text-gray-900">ReviewAnalyzer</h1>
+      <p class="text-sm text-gray-600">Optimise ton activité avec l'intelligence artificielle</p>
     </div>
+  </header>
 
-    <div class="bg-gray-800/60 rounded-xl p-6 mt-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-      <h2 class="text-2xl font-semibold text-green-400 mb-4">
-        📍 Pour les porteurs de projet ou curieux
-      </h2>
-      <p class="text-gray-300 text-base sm:text-lg mb-2">
-        Vous souhaitez ouvrir un restaurant, un commerce ou un business ?
-        Accédez à la data d’un quartier, découvrez les tendances locales, les besoins
-        des clients et leurs frustrations. Une boussole business intelligente.
-      </p>
+  <main class="py-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+      <section class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Pour les professionnels</h2>
+        <p class="mb-4">Commerçants, freelances, restaurateurs... profitez de :</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Analyse intelligente de vos avis clients</li>
+          <li>Recommandations d'amélioration concrètes</li>
+          <li>Comparaison avec la concurrence locale</li>
+          <li>Import ou scan automatique de votre menu</li>
+        </ul>
+      </section>
+
+      <section class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Pour les futurs entrepreneurs</h2>
+        <p class="mb-4">Vous souhaitez ouvrir un commerce ? On vous aide à :</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Analyser une zone géographique</li>
+          <li>Comprendre les attentes locales</li>
+          <li>Repérer les opportunités inexploitées</li>
+        </ul>
+      </section>
+
+      <section class="bg-white shadow rounded-lg p-6" x-data="{ open: false }">
+        <h2 class="text-2xl font-semibold mb-2">Fonctionnalités à venir</h2>
+        <button @click="open = !open" class="text-indigo-600 hover:underline">Afficher/Masquer</button>
+        <ul x-show="open" x-transition class="list-disc pl-6 space-y-2 mt-4">
+          <li>Connexion API (Google, Airbnb...)</li>
+          <li>Carte interactive avec géolocalisation</li>
+          <li>Tableau de bord IA et recommandations en temps réel</li>
+          <li>Analyse automatique d’images (menus, flyers...)</li>
+        </ul>
+      </section>
+
+      <section class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">Technos utilisées</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">React.js</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">TailwindCSS</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">AdonisJS</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">MySQL</span>
+          <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">Alpine.js</span>
+        </div>
+      </section>
+
+      <section class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-2">À qui s'adresse ReviewAnalyzer ?</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Commerçants (restaurants, boutiques...)</li>
+          <li>Freelances et indépendants</li>
+          <li>Agences et professionnels locaux</li>
+          <li>Porteurs de projet ou particuliers curieux</li>
+        </ul>
+      </section>
+
+      <section class="bg-white shadow rounded-lg p-6 text-center">
+        <h2 class="text-2xl font-bold text-green-600 mb-4">Tout est alimenté par une intelligence artificielle !</h2>
+        <p class="text-gray-700">De l’analyse des avis à la recommandation stratégique, ReviewAnalyzer vous accompagne grâce à la puissance des données.</p>
+      </section>
+
     </div>
+  </main>
 
-    <div class="mt-12 text-center">
-      <p class="text-sm text-gray-500 italic">
-        Propulsé par une IA qui alimente l’analyse des avis, des tendances et des données locales.
-      </p>
-    </div>
-  </div>
-
+  <footer class="bg-gray-200 py-6 text-center text-sm text-gray-600">
+    &copy; 2025 ReviewAnalyzer – Tous droits réservés
+  </footer>
 </body>
 </html>
